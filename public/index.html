@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>forim connexion</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/semantic-ui/dist/semantic.min.css">
+
+</head>
+<body>
+
+
+	<div class="ui inverted segment">
+		<div class="ui inverted form">
+			<form action="/process_post" method="POST">
+				<div class="two fields">
+					<div class="field">
+						<label for="name">Name</label>
+						<input  id="name" placeholder="user_name" name="user_name" type="text">
+					</div>
+					<div class="field">
+						<label id="password">PASSWORD</label>
+						<input id="password" placeholder="password" name="password" type="password">
+					</div> 
+				</div>
+				<div class="inline field">
+					<div class="ui checkbox">
+						<input tabindex="0" class="hidden" type="checkbox">
+						<label>I agree to the terms and conditions</label>
+					</div>
+				</div>
+				<button id="submit" class="ui submit button" type="submit" value="submit">Submit</button>
+			</form>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
